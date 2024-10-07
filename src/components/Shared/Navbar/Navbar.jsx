@@ -122,24 +122,24 @@ function Navbar() {
         <div className="sm:hidden" id="mobile-menu">
           <div className="border-t border-gray-200 pt-4 pb-3">
             <div className="mt-3 grid place-content-center space-y-1">
-              <a
-                href="index.html"
+              <Link
+                to="/"
                 className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
               >
                 Home
-              </a>
-              <a
-                href="about.html"
+              </Link>
+              <Link
+                to="/about"
                 className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
               >
                 About Me
-              </a>
-              <a
-                href="services.html"
+              </Link>
+              <Link
+                to="/services"
                 className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"
               >
                 Services
-              </a>
+              </Link>
               <a
                 href="projects.html"
                 className="block px-4 py-2 text-base font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-800"

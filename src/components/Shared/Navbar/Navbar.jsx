@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -9,8 +10,8 @@ function Navbar() {
         <div className="flex h-16 items-center justify-between">
           <div className="flex">
             <div className="flex flex-shrink-0 items-center">
-              <a
-                href="index.html"
+              <Link
+                to="/"
                 className="flex items-center space-x-3 rtl:space-x-reverse"
               >
                 <span className="w-8 h-8 text-white bg-orange-500 italic text-center font-mono pt-1 rounded-full">
@@ -19,23 +20,23 @@ function Navbar() {
                 <span className="text-gray-400 text-2xl font-semibold whitespace-nowrap dark:text-white">
                   <span className="font-medium text-gray-800">M</span>umair
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
           {/* routes */}
           <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
-            <a
-              href="index.html"
+            <Link
+              to="/"
               className="inline-flex items-center border-b-2 border-gray-800 px-1 pt-1 text-sm font-semibold text-gray-900"
             >
               Home
-            </a>
-            <a
-              href="about.html"
+            </Link>
+            <Link
+              to="/about"
               className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800"
             >
               About Me
-            </a>
+            </Link>
             <a
               href="services.html"
               className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800"

@@ -37,12 +37,12 @@ function Navbar() {
             >
               About Me
             </Link>
-            <a
-              href="services.html"
+            <Link
+              to="/services"
               className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800"
             >
               Services
-            </a>
+            </Link>
             <a
               href="projects.html"
               className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-600 hover:border-gray-300 hover:text-gray-800"
